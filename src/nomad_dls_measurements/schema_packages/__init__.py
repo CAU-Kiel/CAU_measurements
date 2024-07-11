@@ -7,7 +7,7 @@ class MySchemaPackageEntryPoint(SchemaPackageEntryPoint):
 
     def load(self):
         from nomad_dls_measurements.schema_packages.mypackage import m_package
- 
+
         return m_package
 
 
