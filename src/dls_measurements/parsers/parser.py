@@ -25,5 +25,6 @@ class MyParser(MatchingParser):
         logger: 'BoundLogger',
         child_archives: dict[str, 'EntryArchive'] = None,
     ) -> None:
-        logger.info('MyParser.parse', parameter=configuration.parameter)
-        archive.results = Results(material=Material(elements=['H', 'O']))
+        logger.info('NewParser.parse', parameter=configuration.parameter)
+
+        archive.workflow2 = Workflow(name='test')
