@@ -1,8 +1,8 @@
-site_name: nomad-dls_measurements
+site_name: dls_measurements
 site_description: A nomad plugin for DLS measurements.
 site_author: stepanka.lankova@gmail.com
 
-repo_url: https://github.com/lankovas/nomad-dls_measurements
+repo_url: https://github.com/lankovas/dls_measurements
 edit_uri: ""
 
 nav:
