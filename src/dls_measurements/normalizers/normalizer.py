@@ -14,13 +14,13 @@ from nomad.config import config
 from nomad.normalizing import Normalizer
 
 configuration = config.get_plugin_entry_point(
-    'nomad_dls_measurements.normalizers:mynormalizer'
+    'dls_measurements.normalizers:normalizer_entry_point'
 )
 
 
-class MyNormalizer(Normalizer):
+class NewNormalizer(Normalizer):
     def normalize(self, archive: 'EntryArchive', logger: 'BoundLogger') -> None:
         super().normalize(archive, logger)
-        logger.info('MyNormalizer.normalize', parameter=configuration.parameter)
+        logger.info('NewNormalizer.normalize', parameter=configuration.parameter)
         if archive.results and archive.results.material:
             archive.results.material.elements = ['C', 'O']
