@@ -1,0 +1,20 @@
+diff a/src/dls_measurements/parsers/parser.py b/src/dls_measurements/parsers/parser.py	(rejected hunks)
+@@ -11,15 +11,15 @@ if TYPE_CHECKING:
+     )
+ 
+ from nomad.config import config
+-from nomad.datamodel.results import Material, Results
++from nomad.datamodel.metainfo.workflow import Workflow
+ from nomad.parsing.parser import MatchingParser
+ 
+ configuration = config.get_plugin_entry_point(
+-    'nomad_dls_measurements.parsers:myparser'
++    'dls_measurements.parsers:parser_entry_point'
+ )
+ 
+ 
+-class MyParser(MatchingParser):
++class NewParser(MatchingParser):
+     def parse(
+         self,
+         mainfile: str,

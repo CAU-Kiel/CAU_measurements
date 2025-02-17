@@ -1,4 +1,4 @@
-# Welcome to the `nomad-dls_measurements` documentation
+# Welcome to the `dls_measurements` documentation
 
 A nomad plugin for DLS measurements.
 
